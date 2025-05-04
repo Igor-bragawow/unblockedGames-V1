@@ -165,3 +165,27 @@ footer{
 
     text-align: center;
 }
+/* responsividade */
+
+@media (max-width: 800px) {
+    .game{
+        width: 90%;
+    }
+    .game p{
+        width: 90%;
+        font-size: 14px;
+    }
+    .game h4{
+        width: 90%;
+        height: auto;
+
+        text-align: center;
+    }
+    .game input{
+        width: 75%;
+        font-size: 14px;
+    }
+    .game button{
+        width: 75%;
+    }
+}
