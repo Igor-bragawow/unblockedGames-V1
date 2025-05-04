@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="troca-palavra.css">
+    <link rel="icon" href="img/console.png">
+    <title>Unblocked Games | TROCA-PALAVRA</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Unblocked<span>Games</span></a></h1>
+    </header>
+    <main>
+        <h2>TROCA-PALAVRAS</h2>
+        <div class="game">
+            <h4>🎮 Bem-vindo ao jogo dos Filmes! 🎬</h4>
+            <br>
+            <p>A hora do <strong> Rush</strong></p>
+            <p> O <strong> Mágico </strong> de OZ"</p>
+            <p>11 homens e um <strong> segredo </strong></p>
+            <p><strong> Planeta </strong> dos Macacos</p>
+            <p>Procurando <strong> Nemo </strong></p>
+            <br>
+            <input id="palavra" type="text" placeholder="Digite uma plavra">
+            <br>
+            <button onclick="Trocapalavra()">Jogar</button>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direito reservados à <br> Carlos Eduardo e Igor Braga</p>
+    </footer>
+    <script>
+        function  Trocapalavra(){
+            var palavraDigitada= document.getElementById("palavra").value
+
+            var palavra= document.getElementsByTagName("strong") 
+
+            for(i=0;i<palavra.length;i++){
+                palavra[i].innerHTML =palavraDigitada
+            }
+        }        
+    </script>
+</body>
+
+</html>

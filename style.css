@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Press+Start+2P&family=Jersey+10&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: "Fira Sans", sans-serif;
+
+    background: linear-gradient(217deg, rgb(0, 8, 83), rgb(96, 0, 83) 70%);
+    background-repeat: no-repeat;
+}
+/* header */
+header{
+    height: 45px;
+    width: 70%;
+
+    margin: 60px auto 0px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 3px;
+
+    background-color: #F5F5F5;
+
+    box-shadow: 4px 4px rgb(186, 186, 186), -4px 4px rgb(186, 186, 186)
+}
+header h1{
+    margin-left: 10px;
+
+    color: #4a074d;
+
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+}
+header span{
+    color: #190458;
+}
+/* main */
+main{
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin: 20px auto 20px auto;
+}
+div[class ^= 'game']{
+    width:calc(33.3% - 15px);
+    height: 300px;
+
+    border-radius: 3px;
+
+    background-color: #F5F5F5;
+
+    box-shadow: 3px 4px 3px rgba(255, 255, 255, 0.169), -3px 4px 3px rgb(255, 255, 255, 0.169);
+
+    text-align: center;
+
+    transition: all 0.2s ease-in-out;
+}
+div[class ^= 'game']:hover{
+    box-shadow: 3px 4px 5px rgba(255, 255, 255, 0.365), -3px 3px 5px rgb(255, 255, 255, 0.365);
+    scale: 1.02;
+}
+div[class ^= 'game'] p{
+    width: 100px;
+
+    position: relative;
+    top: calc(300px - 9px);
+
+    margin: 0px auto 0px auto;
+
+    border-radius: 3px;
+
+    background-color: #F5F5F5;
+    color: black;
+
+    font-size: 18px;
+}
+.game1{
+    background-image: url(img/troca-palavras.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+.game2{
+    background-image: url(img/jogo-da-velha.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+/* footer */
+footer{
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F5F5F5;
+
+    text-align: center;
+}
+/* responsividade */
+@media (max-width: 1000px) {
+    main{
+        gap: 40px;
+    }
+    div[class ^= 'game']{
+        width: 220px;
+    }
+}
